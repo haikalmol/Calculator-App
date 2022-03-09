@@ -1,0 +1,92 @@
+.cal-hero-container {
+  width: 100%;
+  height: max-content;
+}
+.logo-container {
+  width: max-content;
+  height: max-content;
+  float: left;
+}
+.logo {
+  font-family: $spartan;
+  font-weight: 700;
+  font-size: 32px;
+  color: $text-logo-output;
+  text-transform: lowercase;
+  margin: 0;
+}
+.theme-text-container {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+  float: right;
+}
+.theme {
+  font-family: $spartan;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: $text-logo-output;
+  margin: 0;
+}
+.theme-toggle-container {
+  width: 70px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+.theme-toggle-text-container {
+  width: 85%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.theme-toggle-text {
+  font-family: $spartan;
+  font-size: 11px;
+  font-weight: 700;
+  margin: 0;
+  color: $text-logo-output;
+}
+.theme-toggle-body {
+  width: 100%;
+  height: 28px;
+  border-radius: 23px;
+  background-color: $toggle-keypad-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.theme-toggle-path {
+  width: 85%;
+  height: 19px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.theme-toggle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $eq-key;
+  position: relative;
+  transition: all 100ms ease-in;
+}
+.theme-1 {
+  margin-right: auto;
+}
+.theme-2 {
+  margin: auto;
+}
+.theme-3 {
+  margin-left: auto;
+}

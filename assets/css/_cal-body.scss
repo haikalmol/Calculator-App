@@ -1,0 +1,77 @@
+.calc-body {
+  width: 100%;
+  height: 476px;
+  background-color: $toggle-keypad-background;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cal-btn-container {
+  width: 491px;
+  height: 415px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(4, 101px);
+  grid-template-rows: repeat(5, 58px);
+  justify-content: space-between;
+  align-content: space-between;
+}
+.cal-def-key {
+  height: 58px;
+  border: none;
+  border-radius: 10px;
+  font-family: $spartan;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+
+  &:active {
+    top: 3px;
+  }
+}
+.primary-key {
+  width: 101px;
+  background: $primary-key;
+  box-shadow: 0px 5px 1px $primary-key-shadow;
+  font-size: 33px;
+  color: $text-primary;
+  &:active {
+    box-shadow: 0px 2px 1px $primary-key-shadow;
+  }
+}
+.delete-key {
+  width: 101px;
+  background: $del-reset-key;
+  box-shadow: 0px 5px 1px $del-reset-key-shadow;
+  font-size: 20px;
+  margin: 0;
+  color: $text-secondary;
+  &:active {
+    box-shadow: 0px 2px 1px $del-reset-key-shadow;
+  }
+}
+.reset-key {
+  width: 231px;
+  background: $del-reset-key;
+  box-shadow: 0px 5px 1px $del-reset-key-shadow;
+  font-size: 20px;
+  margin: 0;
+  color: $text-secondary;
+  grid-column: 1/3 !important;
+  &:active {
+    box-shadow: 0px 2px 1px $del-reset-key-shadow;
+  }
+}
+.eq-key {
+  width: 231px;
+  background: $eq-key;
+  box-shadow: 0px 5px 1px $eq-key-shadow;
+  font-size: 20px;
+  margin: 0;
+  color: $text-teritary;
+  grid-column: 3/5 !important;
+  &:active {
+    box-shadow: 0px 2px 1px $eq-key-shadow;
+  }
+}

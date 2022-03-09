@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main class="cal-container">
+      <div class="cal-hero-container">
+        <div class="logo-container">
+          <h1 class="logo">calc</h1>
+        </div>
+        <div class="theme-toggle-container">
+          <div class="theme-toggle-text-container">
+            <p class="theme-toggle-text" id="theme-no-1">1</p>
+            <p class="theme-toggle-text" id="theme-no-2">2</p>
+            <p class="theme-toggle-text" id="theme-no-3">3</p>
+          </div>
+          <div class="theme-toggle-body">
+            <div class="theme-toggle-path">
+              <div class="theme-toggle"></div>
+            </div>
+          </div>
+        </div>
+        <div class="theme-text-container">
+          <p class="theme">Theme</p>
+        </div>
+      </div>
+      <div class="screen-container">
+        <input aria-label="Screen" type="text" class="screen" value="" />
+        <div class="screen-guard"></div>
+      </div>
+      <div class="calc-body">
+        <div class="cal-btn-container">
+          <button data-key="7" class="cal-def-key primary-key">7</button>
+          <button data-key="8" class="cal-def-key primary-key">8</button>
+          <button data-key="9" class="cal-def-key primary-key">9</button>
+          <button data-del class="cal-def-key delete-key">del</button>
+          <button data-key="4" class="cal-def-key primary-key">4</button>
+          <button data-key="5" class="cal-def-key primary-key">5</button>
+          <button data-key="6" class="cal-def-key primary-key">6</button>
+          <button data-plus class="cal-def-key primary-key">+</button>
+          <button data-key="1" class="cal-def-key primary-key">1</button>
+          <button data-key="2" class="cal-def-key primary-key">2</button>
+          <button data-key="3" class="cal-def-key primary-key">3</button>
+          <button data-minus class="cal-def-key primary-key">-</button>
+          <button data-dot class="cal-def-key primary-key">.</button>
+          <button data-key="0" class="cal-def-key primary-key">0</button>
+          <button data-divide="1" class="cal-def-key primary-key">/</button>
+          <button value="*" data-multiply class="cal-def-key primary-key">×</button>
+          <button data-reset class="cal-def-key reset-key">reset</button>
+          <button data-equal class="cal-def-key eq-key">=</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/toggle.js"></script>
+    <script src="./assets/js/calculation.js"></script>
+  </body>
+</html>

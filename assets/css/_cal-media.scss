@@ -1,0 +1,41 @@
+@media (max-width: 630px) {
+  .theme {
+    font-size: 12px;
+  }
+  .cal-container {
+    width: 326px;
+    height: 610px;
+  }
+  .screen-container {
+    height: 87px;
+  }
+  .calc-body {
+    width: 325px;
+    height: 418px;
+  }
+  .screen {
+    width: 299px;
+    font-size: 30px;
+  }
+  .cal-btn-container {
+    width: 299px;
+    height: 371px;
+    grid-template-columns: repeat(4, 60px);
+  }
+  .primary-key {
+    width: 60px;
+    font-size: 28px;
+  }
+  .delete-key {
+    width: 60px;
+    font-size: 17px;
+  }
+  .reset-key {
+    width: 138px;
+    font-size: 17px;
+  }
+  .eq-key {
+    width: 138px;
+    font-size: 17px;
+  }
+}

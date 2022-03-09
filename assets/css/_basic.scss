@@ -1,0 +1,23 @@
+body {
+  width: 100%;
+  height: 100vh;
+  min-height: 667px;
+  background-color: $main-background;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cal-container {
+  max-width: 541px;
+  min-width: 326px;
+  width: 90%;
+  height: 706px;
+  min-height: 608px;
+  background-color: $main-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

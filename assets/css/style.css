@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+:root {
+  --main-background: hsl(222, 26%, 31%);
+  --toggle-keypad-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  --text-logo-output: rgb(255, 255, 255);
+  --text-primary: hsl(221, 14%, 31%);
+  --text-secondary: hsl(0, 0%, 100%);
+  --text-teritary: hsl(0, 0%, 100%);
+  --primary-key: hsl(30, 25%, 89%);
+  --primary-key-shadow: hsl(28, 16%, 65%);
+  --eq-key: hsl(6, 63%, 50%);
+  --eq-key-shadow: hsl(6, 70%, 34%);
+  --del-reset-key: hsl(225, 21%, 49%);
+  --del-reset-key-shadow: hsl(224, 28%, 35%);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  min-height: 667px;
+  background-color: var(--main-background);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cal-container {
+  max-width: 541px;
+  min-width: 326px;
+  width: 90%;
+  height: 706px;
+  min-height: 608px;
+  background-color: var(--main-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cal-hero-container {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.logo-container {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  float: left;
+}
+
+.logo {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text-logo-output);
+  text-transform: lowercase;
+  margin: 0;
+}
+
+.theme-text-container {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+  float: right;
+}
+
+.theme {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--text-logo-output);
+  margin: 0;
+}
+
+.theme-toggle-container {
+  width: 70px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+.theme-toggle-text-container {
+  width: 85%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-toggle-text {
+  font-family: "Spartan", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-logo-output);
+}
+
+.theme-toggle-body {
+  width: 100%;
+  height: 28px;
+  border-radius: 23px;
+  background-color: var(--toggle-keypad-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-toggle-path {
+  width: 85%;
+  height: 19px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.theme-toggle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--eq-key);
+  position: relative;
+  transition: all 100ms ease-in;
+}
+
+.theme-1 {
+  margin-right: auto;
+}
+
+.theme-2 {
+  margin: auto;
+}
+
+.theme-3 {
+  margin-left: auto;
+}
+
+.screen-container {
+  width: 100%;
+  height: 126px;
+  background-color: var(--screen-background);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.screen {
+  max-width: 491px;
+  width: 491px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  text-transform: uppercase;
+  color: var(--text-logo-output);
+}
+.screen:focus {
+  outline: none;
+}
+
+.screen-guard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: transparent;
+}
+
+.calc-body {
+  width: 100%;
+  height: 476px;
+  background-color: var(--toggle-keypad-background);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cal-btn-container {
+  width: 491px;
+  height: 415px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(4, 101px);
+  grid-template-rows: repeat(5, 58px);
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.cal-def-key {
+  height: 58px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.cal-def-key:active {
+  top: 3px;
+}
+
+.primary-key {
+  width: 101px;
+  background: var(--primary-key);
+  box-shadow: 0px 5px 1px var(--primary-key-shadow);
+  font-size: 33px;
+  color: var(--text-primary);
+}
+.primary-key:active {
+  box-shadow: 0px 2px 1px var(--primary-key-shadow);
+}
+
+.delete-key {
+  width: 101px;
+  background: var(--del-reset-key);
+  box-shadow: 0px 5px 1px var(--del-reset-key-shadow);
+  font-size: 20px;
+  margin: 0;
+  color: var(--text-secondary);
+}
+.delete-key:active {
+  box-shadow: 0px 2px 1px var(--del-reset-key-shadow);
+}
+
+.reset-key {
+  width: 231px;
+  background: var(--del-reset-key);
+  box-shadow: 0px 5px 1px var(--del-reset-key-shadow);
+  font-size: 20px;
+  margin: 0;
+  color: var(--text-secondary);
+  grid-column: 1/3 !important;
+}
+.reset-key:active {
+  box-shadow: 0px 2px 1px var(--del-reset-key-shadow);
+}
+
+.eq-key {
+  width: 231px;
+  background: var(--eq-key);
+  box-shadow: 0px 5px 1px var(--eq-key-shadow);
+  font-size: 20px;
+  margin: 0;
+  color: var(--text-teritary);
+  grid-column: 3/5 !important;
+}
+.eq-key:active {
+  box-shadow: 0px 2px 1px var(--eq-key-shadow);
+}
+
+@media (max-width: 630px) {
+  .theme {
+    font-size: 12px;
+  }
+
+  .cal-container {
+    width: 326px;
+    height: 610px;
+  }
+
+  .screen-container {
+    height: 87px;
+  }
+
+  .calc-body {
+    width: 325px;
+    height: 418px;
+  }
+
+  .screen {
+    width: 299px;
+    font-size: 30px;
+  }
+
+  .cal-btn-container {
+    width: 299px;
+    height: 371px;
+    grid-template-columns: repeat(4, 60px);
+  }
+
+  .primary-key {
+    width: 60px;
+    font-size: 28px;
+  }
+
+  .delete-key {
+    width: 60px;
+    font-size: 17px;
+  }
+
+  .reset-key {
+    width: 138px;
+    font-size: 17px;
+  }
+
+  .eq-key {
+    width: 138px;
+    font-size: 17px;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+} /*# sourceMappingURL=style.css.map */
